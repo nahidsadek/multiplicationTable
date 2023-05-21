@@ -1,0 +1,28 @@
+<html>
+
+<body>
+
+    <h1>Multiplication Table</h1>
+    <h2>Write a program that generates a multiplication table for a given number using a for loop.
+
+    </h2>
+    Enter a number:
+    <input type="text" id="num" /><br /><br />
+
+    <input type="button" value="Click to Multiply" onClick="multiplicationTable()" />
+    <p id="result"></p>
+    <script>
+        function multiplicationTable() {
+            let n = document.getElementById('num').value;
+
+            let out = "";
+            for (let i = 1; i <= 10; i++) {
+                out = out + i + " * " + n + " = " + i * n + "<br/>";
+            }
+            document.getElementById("result").innerHTML = out;
+        }
+    </script>
+
+</body>
+
+</html>
